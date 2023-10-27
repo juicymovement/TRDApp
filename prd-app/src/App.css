@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;  /* Full viewport height */
+  width: 100%; 
+  text-align: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* or any other font you prefer */
+  background-color: #f6f6f6;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Reduce spacing between label and input */
+  }
+
+input[type="text"], textarea {
+  padding: 100px 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 800px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #007BFF; /* or your primary color */
+  outline: none;
+}
+
+button {
+  padding: 10px 20px; /* Adjust padding to make button relative to form */
+  background-color: #007BFF; /* or your primary color */
+  color: #fff;
+  width: 10%; /* Make button width relative to form */
+  margin: 0 auto; /* Center the button */
+}
+
+button:hover {
+  background-color: #0056b3; /* a shade darker for hover */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

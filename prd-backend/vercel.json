@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "prd-backend",
+    "builds": [
+      { "src": "index.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/index.js" },
+      { "src": "/(.*)", "dest": "/index.js" }
+    ]
+  }
+  

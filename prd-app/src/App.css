@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f6f6f6; /* Changing background color to a softer tone */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c34; /* Changing text color to dark for contrast */
 }
 
 .slide {
@@ -46,15 +46,17 @@ body {
   gap: 10px; /* Reduce spacing between label and input */
   }
 
-input[type="text"], textarea {
-  padding: 100px 150px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  width: 100%;
-  max-width: 800px;
-  transition: border-color 0.3s;
-}
+  input[type="text"], textarea {
+    padding: 12px 15px; /* Adjusting padding for a sleeker look */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 800px;
+    transition: border-color 0.3s;
+    background-color: #f6f6f6; /* Background to match the overall design */
+  }
+  
 
 input[type="text"]:focus, textarea:focus {
   border-color: #007BFF; /* or your primary color */
@@ -62,11 +64,19 @@ input[type="text"]:focus, textarea:focus {
 }
 
 button {
-  padding: 10px 20px; /* Adjust padding to make button relative to form */
-  background-color: #007BFF; /* or your primary color */
-  color: #fff;
-  width: 10%; /* Make button width relative to form */
-  margin: 0 auto; /* Center the button */
+  padding: 8px 16px; /* Reducing padding for a sleeker look */
+  background-color: #282c34; /* Changing to a dark shade */
+  color: #f6f6f6; /* Light text color for contrast */
+  width: auto; /* Adjust width */
+  border: none; /* Removing border for a cleaner look */
+  border-radius: 4px; /* Rounded corners */
+  margin: 0 auto;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
 }
 
 button:hover {
